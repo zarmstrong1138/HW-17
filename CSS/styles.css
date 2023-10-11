@@ -1,20 +1,25 @@
 body {
-    background-color: #49443A;
+    background-color: #DFDDD7;
 }
+
 .inline-block {
     display: inline-block;
     vertical-align: top;
 }
 
+header {
+    background-color: #49443A;
+}
 header .logo-link {
     width: 23%;
     padding: 1%;
-    text-align: center;
+    text-align: left;
 }
 
 nav {
-    width: 73%;
-    padding: 1%;
+    width: 50%;
+    padding: 2%;
+    
 }
 
 nav ul {
@@ -22,9 +27,18 @@ nav ul {
     margin-left: auto;
 }
 
+.section-container {
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .heroImg {
     height: 600px;
-    padding: 25px;
+    padding: 2%;
 }
 
 .content {
@@ -32,19 +46,20 @@ nav ul {
     margin: 0 auto;
 }
 
-footer {
-    text-align: center;
-}
+.resume {
+    margin: 20%;
 
-hr {
-    border: 2px solid #DFDDD7;
-    margin: 16px;
+}
+footer {
+    background-color: #49443A;
+    vertical-align: bottom;
+    padding: 2%;
 }
 
 footer .logo-link {
     display: inline-block;
     text-align: left;
-    width: 15%;
+    scale: 50%;
     padding: 2%;
 }
 
@@ -52,15 +67,15 @@ footer .logo-link {
     display: inline-block;
     list-style: none;
     text-align: center;
+    width: 30%;
 }
 
 .links {
-    text-align: right;
+    padding: 2%;
 }
 
 .social-icons li {
     margin-right: 2%;
     display: inline-block;
+    padding: 2%;
 }
-
-
