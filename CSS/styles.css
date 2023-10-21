@@ -1,81 +1,207 @@
 body {
-    background-color: #DFDDD7;
-}
-
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+    background-color: #49443A;
+    margin: 0;
 }
 
 header {
-    background-color: #49443A;
+    background-color: #86847E;
+    width: 1200px;
+    margin: 0 auto;
+
 }
 header .logo-link {
-    width: 23%;
-    padding: 1%;
-    text-align: left;
+    padding: 2%;
 }
 
 nav {
-    width: 50%;
-    padding: 2%;
-    
+    display: inline-grid;
+    justify-content: end;
 }
 
 nav ul {
-    width: 50%;
-    margin-left: auto;
+    color: #DFDDD7; 
+    font-family:'Montserrat', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
-.section-container {
-    display: flex;
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
+button:hover {
+    height: 40px;
+    background-color: #355766;
+    color: #DFDDD7;
+    border: 1px solid #DFDDD7;
+    font-family:'Montserrat', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #3b3830;
+}
+button {
+    height: 40px;
+    background-color: #274E5F;
+    color: #DFDDD7;
+    border: 1px solid #DFDDD7;
+    font-family:'Montserrat', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px#2e2b26;
 }
 
-.heroImg {
-    height: 600px;
-    padding: 2%;
+nav ul li {
+    list-style-type: none;
 }
 
-.content {
-    width: 500px;
+/* .inline-block {
+    display: inline-block;
+    vertical-align: top;
+} */
+.main-container {
+    width: 1200px;
     margin: 0 auto;
 }
 
-.resume {
-    margin: 20%;
-
+.header-container {
+    width: 100%;
+    /* margin: 0 auto; */
 }
-footer {
-    background-color: #49443A;
-    vertical-align: bottom;
-    padding: 2%;
+
+.header {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.paragraphs {
+    padding-right: 2%;
+    color: #DFDDD7;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+
+figure {
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+.heroImg {
+    height: 500px;
+}
+
+.resume-button {
+    display: grid;
+    justify-content: center;
+}
+
+.resume {
+    align-items: center;
+}
+
+/* .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    /* grid-template-rows: 1fr 1fr;   */
+}
+
+.cards-2 {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-container {
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: left;
+    height: 120px;
 }
 
 footer .logo-link {
-    display: inline-block;
-    text-align: left;
-    scale: 50%;
-    padding: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
-.links, .social-icons {
-    display: inline-block;
+.footer-links ul {
+    display: flex;
     list-style: none;
-    text-align: center;
-    width: 30%;
+    justify-content: space-around;
+    color: #DFDDD7; 
+    font-family:'Montserrat', sans-serif;
+    align-items: center;
+    font-variant: small-caps;
+    letter-spacing: .1em;
 }
 
-.links {
-    padding: 2%;
+.social-links ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
 }
 
-.social-icons li {
-    margin-right: 2%;
-    display: inline-block;
-    padding: 2%;
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #86847E;
+    position: sticky;
+}
+
+#app{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+
+#app>header {
+    grid-area: header;
+}
+
+#app>main {
+    grid-area: main;
+}
+
+#app>footer {
+    grid-area: footer;
 }

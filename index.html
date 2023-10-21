@@ -2,45 +2,92 @@
 <html>
 <head>
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
+
 </head>
 <body>
-    <header class="navigation">
-        <a class="inline-block logo-link" href="https://www.eleven38designs.com">
-            <img src="images\logolightsvg.png" alt="Logo">
-        </a>
-        <nav class="inline-block">
-            <ul>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Designs</li>
-                <li class="inline-block">
-                    <button>Get In Touch</button>
-                </li>
-            </ul>
+    <div id="app">
+        <div class="header-container">
+            <header>
+                <a class="inline-block logo-link" href="https://www.eleven38designs.com">
+                <img src="images\logolightsvg-small.svg" alt="Logo">
+                </a>
+                <nav class="inline-block">
+                <ul>
+                    <li>About</li>
+                    <li>Designs</li>
+                    <li>
+                        <button>Get In Touch</button>
+                    </li>
+                </ul>
         </nav>
     </header>
-    <section class="heroImg flex-container">
-        <div class="section-container">
+    </div>
+    <main class="main-container">
+        <div class="container">
+            <div class="paragraphs">
+                <p>Having lived in numerous states and worked in many different fields, I have always found joy in process improvement. I also really enjoy the artistic side of design. It therefore made complete sense when I decided to pursue a career in UX/UI Design. What better way to combine the two?</p>
+                <p>My life experiences, including as an Air Traffic Controller in the Navy, a landscape designer, a Realtor® and a National Park Service Law Enforcement Ranger, have allowed me to become a very well-rounded person that does not shy away from new challenges.  These experiences also allow me to connect and empathize with people from all walks of life.</p>
+            <div class= "resume-button">
+                <button class="resume">Download My Resume</button>
+                </div>
+            </div>
+            <figure>
             <img src="images\Headshot.jpg">
-            <p>Having lived in numerous states and worked in many different fields, I have always found joy in process improvement. I also really enjoy the artistic side of design. It therefore made complete sense when I decided to pursue a career in UX/UI Design. What better way to combine the two?</p>
-            <p>My life experiences, including as an Air Traffic Controller in the Navy, a landscape designer, a Realtor® and a National Park Service Law Enforcement Ranger, have allowed me to become a very well-rounded person that does not shy away from new challenges.  These experiences also allow me to connect and empathize with people from all walks of life.</p>
+            </figure>
         </div>
-        <button class="resume">Download My Resume</button>
-    </section>
-    <footer>
+            <div class="card-container">
+            <div class="cards">
+                <figure class="philosophy-proof">
+                    <!-- Figure tags are good for responsive web design,creating containers around images to prevent overlap -->
+                    <img src="images\books-2606859_1280 1.jpg">
+                </figure>
+                <div><h1>Philosophy</h1>
+                    <p>Zack takes pride in his work and strives to always put the client first and to always think with design principles in mind.  His style is clean, modern, and elegant.</p>
+                </div>
+                </div>
+                    <div class="cards-2">
+                    <div>
+                    <h1>Proficiency</h1>
+                    <p>Zack’s design skills are many and influenced by experiences of all kinds.</p>
+                    </div>
+                <figure class="proficiency">
+                    <img src="images\laptop-4948837_1280 1.jpg">
+                </figure></div>
+                <div class="cards"><figure class="philosophy-proof">
+                    <img src="images\books-2606859_1280 1.jpg">
+                </figure>
+                <div><h1>Proof</h1>
+                <p>The old addage of proof and pudding comes to mind.  And Zack really likes pudding!  Take a look at some of Zack’s work.</p>
+                <button class="see-designs">See Designs</button>    
+                </div></div>
+            </div>
+    </main>
+        <div class="footer-container">
+            <footer>
         <a class="logo-link" alt="logo">
-            <img src="images\logolightsvg.png">
+            <img src="images\logolightsvg-small.svg">
         </a>
-        <ul class="links">
-            <li class="inline-block">About</li>
-            <li class="inline-block">Designs</li>
-            <li class="inline-block">Contact</li>
-        </ul>
-        <ul class="social-icons">
-            <li><img src="images\Facebook.png" alt="Facebook"></li>
-            <li><img src="images\Instagram.png" alt="Instagram"></li>
-            <li><img src="images\LinkedIn.png" alt="LinkedIn"></li>
-        </ul>
+        <div class="footer-links">
+            <ul class="links">
+                <li>About</li>
+                <li>Designs</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <ul class="social-icons">
+                <li><img src="images\Social Media Icon Square\Facebook.svg" alt="Facebook"></li>
+                <li><img src="images\Social Media Icon Square\Instagram.svg" alt="Instagram"></li>
+                <li><img src="images\Social Media Icon Square\LinkedIn.svg" alt="LinkedIn"></li>
+            </ul>
+        </div>
     </footer>
+        </div>
+    
+</div>
 </body>
 </html>
