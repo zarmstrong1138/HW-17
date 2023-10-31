@@ -27,6 +27,7 @@ footer {
 
 .logo-link {
     padding: 2% 0;
+    margin-right: 65%;
 }
 
 .logo-link img:hover {
@@ -49,6 +50,15 @@ nav ul {
     justify-content: end;
 }
 
+nav ul li {
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #DFDDD7;
+    text-decoration: none;
+}
+
 li:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -56,7 +66,7 @@ li:hover {
 
 button:hover {
     height: 35px;
-    background-color: #355766;
+    /* background-color: #355766; */
     color: #DFDDD7;
     border: 1px solid #DFDDD7;
     font-family:'Montserrat', sans-serif;
